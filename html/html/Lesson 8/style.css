@@ -1,0 +1,24 @@
+/* html{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(216, 236, 204);
+}
+
+audio {
+    border: 1px solid black;
+} */
+
+body {
+    background-color: rgb(216, 236, 204);
+    color: #333;
+    font: 1em / 1.4 Helvetica Neue, Helvetica, Arial, sans-serif;
+    padding: 1em;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  audio {
+    border: 1px solid black;
+  }
