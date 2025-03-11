@@ -1,0 +1,25 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h3{
+    background-color: rgb(172, 255, 71);
+}
+
+#col-count {
+    column-count: 2;
+}
+
+#col-width{
+    column-width: 100px;
+}
+
+#columns{
+    columns: 3 8em;
+}
+  
+#column_gap {
+    column-count: 4;
+    column-gap: 2em;
+}
+  
