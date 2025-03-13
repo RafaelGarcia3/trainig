@@ -1,0 +1,23 @@
+html{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+div{
+    box-sizing: border-box;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    border: 1px solid black;
+    font-size: 1rem;
+    background-color: rgb(120, 182, 248);
+    color: rgb(58, 11, 71);
+    text-shadow: 1px 2px 4px black;
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+}

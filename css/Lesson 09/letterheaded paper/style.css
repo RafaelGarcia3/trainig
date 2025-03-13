@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+  
+html {
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0;
+    background-color: white;
+
+    background-image: url(top-image.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+article {
+    width: 90%;
+    height: 90%;
+}
+
+address {
+    position: absolute;
+    bottom: 2%;
+    right: 5%;
+}
+
+h1 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 128px;
+    height: 128px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 44px 0;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+
+    background-image: url(logo.png);
+}
