@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 22 example</title>
+</head>
+<body>
+
+    <h1>&lt;iframe&gt; examples</h1>
+    <p>
+        This page contains two examples about iframe elements.
+    </p>
+
+    <h3>Basic &lt;iframe&gt;</h3>
+    <iframe
+        src="https://example.org"
+        title="iframe Example 1"
+        width="400"
+        height="300">
+    </iframe>
+    
+    <h3>Embeding source code in an &lt;iframe&gt;</h3>
+    <article>
+        <iframe
+          sandbox
+          srcdoc="
+                <p>
+                    There are two ways to use the <code>iframe</code> element:
+                </p>
+                <ol>
+                    <li>To embed content from another page</li>
+                    <li>To embed user-generated content</li>
+                </ol>
+
+                <h2 id=&quot;embed_another&quot;>Embedding content from another page</h2>
+                <p>
+                    Use the <code>src</code> attribute to specify the URL of the page to embed:
+                </p>
+                <code>&amp;lt;iframe src=&quot;https://example.org&quot;&amp;gt;&amp;lt;/iframe&amp;gt;</code>
+                
+                <h2 id=&quot;embed_user&quot;>Embedding user-generated content</h2>
+                <p>
+                    Use the <code>srcdoc</code> attribute to specify the content to embed. This post is already an example!
+                </p>
+            "
+          width="500"
+          height="250"
+        >
+        </iframe>
+    </article>
+      
+</body>
+</html>

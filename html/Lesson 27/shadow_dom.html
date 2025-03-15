@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow DOM</title>
+    <script src="shadow_dom.js" defer></script>
+</head>
+<body>
+    <p>This page contains examples about the shadow DOM element</p>
+    <h3>Declaratively with HTML</h3>
+    <div id="declarative-host">
+        <template shadowrootmode="open">
+          <span>I'm in the shadow DOM</span>
+        </template>
+    </div>      
+
+    <h3>Imperatively with JS</h3>
+    <div id="host"></div>
+    <span>I'm not in the shadow DOM</span>
+    <br />  <br />
+    <!-- To access elements on the Shadow DOM -->
+    <button id="upper" type="button">Uppercase shadow DOM span elements</button>
+    <button id="reload" type="button">Reload</button>
+
+    <h3>What's the difference?</h3>
+    <p>
+        Creating a shadow DOM via JavaScript API might be a good option for client-side rendered applications. 
+        For other applications, a server-side rendered UI might have better performance and, therefore, a better 
+        user experience.
+    </p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.note {
+    font-style: italic;
+    font-weight: bold;
+}
+  
+.tip {
+    background: rgb(255, 0, 0, 0.25);
+    padding: 10px;
+}
+  
+.tip:before {
+    content: "Tip: ";
+}
+
+#info {
+    background: linear-gradient(to bottom, #ffe8d4, #f69d3c);
+    border: 1px solid #696969;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px black;
+}
+  
+#info:before {
+    content: "Info:";
+    font-style: italic;
+    margin-right: 5px;
+}
