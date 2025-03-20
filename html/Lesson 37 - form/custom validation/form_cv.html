@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+    <link rel="stylesheet" href="../style.css" >
+    <script type="module" src="form_cv.js" ></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Form</h1>
+        <form id="exampleForm">
+            <label for="name">Name:</label>
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required
+                pattern="^[a-zA-Z]+$"
+            ><br /><br />
+
+            <label for="email">Email:</label>
+            <input 
+                type="text" 
+                id="email" 
+                name="email" 
+                required 
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"                
+            ><br /><br/>
+
+            <label for="pass">Password</label>
+            <!-- Pattern password validation
+                At least 8 characters, including 1 uppercase, 1 lowercase, 1 digit, and 1 special character -->
+            <input 
+                type="password" 
+                id="pass" 
+                name="pass" 
+                required
+                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" 
+            ><br /><br />
+
+            <label for="tel">Phone Number:</label>
+            <input 
+                type="text"
+                id="tel"
+                name="tel"
+                required
+                pattern="(^\d{3}-\d{3}-\d{4}$){12}"
+            ><br /><br />
+
+            <label for="message">Message:</label><br />
+            <textarea 
+                id="message" 
+                name="message" 
+                rows="4" 
+                maxlength="50" 
+                required
+            ></textarea><br /><br />
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="result-box" id="resultBox" style="display:none;">
+            <h2>Submitted info:</h2>
+            <p><strong>Name:</strong> <span id="resultName"></span></p>
+            <p><strong>Email:</strong> <span id="resultEmail"></span></p>
+            <p><strong>Password:</strong> <span id="resultPass"></span></p>
+            <p><strong>Phone Number:</strong> <span id="resulttel"></span></p>
+            <p><strong>Message:</strong> <span id="resultMessage"></span></p>
+        </div>
+    </div>
+</body>
+</html>
