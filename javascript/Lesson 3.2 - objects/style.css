@@ -1,0 +1,11 @@
+html{
+    color: purple;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p {
+    margin: 0.5em 0;
+}
+
+* {
+    box-sizing: border-box;
+}
