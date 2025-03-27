@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeouts and Intervals</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+</head>
+<body>
+    <h2>setTimeout()</h2>
+    <p>
+        The following example sets up two simple buttons in a web page and hooks them to the <code>setTimeout()</code> and <code>clearTimeout()</code> routines. <br />
+        Pressing the first button will set a timeout which shows a message after two seconds and stores the timeout id for use by <code>clearTimeout()</code>.
+    </p>
+    <button id="delayed" >Show a message after two seconds</button>
+    <button id="cancel" >Cancel message before it happens</button>
+
+    <div id="output"></div>
+
+    <div id="my_box">
+      <h2>setInterval()</h2>
+    </div>
+    <p>
+        The following example calls the <code>flashtext()</code> function once a second until the Stop button is pressed.
+    </p>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+
+</body>
+</html>
