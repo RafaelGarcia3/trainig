@@ -1,0 +1,32 @@
+[
+    {
+      "name": "Rafael Garcia",
+      "age": 24,
+      "job": "Trainee",
+      "location": "Mexico",
+      "imageUrl": "/assets/users-avatar/rafael.jpg",
+      "imageSize": 300,
+      "skills": [
+        "Leadership",
+        "Team work",
+        "Communication",
+        "Flexibility",
+        "Adaptability"
+      ]
+    },
+    {
+      "name": "Arun Pitchai",
+      "age": "Unknow",
+      "job": "Project Leader",
+      "location": "Siruseri",
+      "imageUrl": "/assets/users-avatar/avatar.png",
+      "imageSize": 300,
+      "skills": [
+        "Problem-solving",
+        "Critical thinking",
+        "Time management",
+        "Collaboration",
+        "Mentoring"
+      ]
+    }
+  ]
