@@ -1,24 +1,7 @@
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import './User.css';
 import usersData from '../../assets/users.json';
-import profileImage from '../../assets/users-avatar/rafael.jpg';
-
-// const user = {
-//     name: 'Rafael Garcia',
-//     age: 24,
-//     job: 'Trainee',
-//     location: 'Mexico',
-//     imageUrl : profileImage,
-//     imageSize: 300,
-// };
-
-// const skills = [
-//     { title: 'Leadership', id: 1 },
-//     { title: 'Team work', id: 2},
-//     { title: 'Communication', id: 3 },
-//     { title: 'Flexibility', id: 4 },
-//     { title: 'Adaptability', id: 5 },
-// ];
+// import profileImage from '../../assets/avatar.png';
 
 function Skills(skills){
     const listItems = skills.map( (skill, index) =>
@@ -36,7 +19,7 @@ export default function User(){
     const [user,setUser] = useState(null);
 
     useEffect( () => {
-        const userData = usersData[1];
+        const userData = usersData[0];
         console.log(userData);
         setUser(userData);
     }, []);

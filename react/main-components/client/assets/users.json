@@ -4,7 +4,7 @@
       "age": 24,
       "job": "Trainee",
       "location": "Mexico",
-      "imageUrl": "/assets/users-avatar/rafael.jpg",
+      "imageUrl": "/assets/rafael.jpg",
       "imageSize": 300,
       "skills": [
         "Leadership",
@@ -19,7 +19,7 @@
       "age": "Unknow",
       "job": "Project Leader",
       "location": "Siruseri",
-      "imageUrl": "/assets/users-avatar/avatar.png",
+      "imageUrl": "/assets/avatar.png",
       "imageSize": 300,
       "skills": [
         "Problem-solving",

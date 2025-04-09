@@ -39,5 +39,12 @@ module.exports = {
       }
     ]
   },
-  plugins: [HtmlWebpackPluginConfig]
+  plugins: [HtmlWebpackPluginConfig],
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'client', 'assets'),
+    },
+    port: 8080,
+    open: true,
+  }
 }
