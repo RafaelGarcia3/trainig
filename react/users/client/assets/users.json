@@ -1,0 +1,55 @@
+[
+    {
+      "id" : 1,
+      "name": "Rafael Garcia",
+      "email": "rafael.garcia@aspiresys.com",
+      "password" : "Rafa106",
+      "age": 24,
+      "job": "Trainee",
+      "location": "Mexico",
+      "imageUrl": "/assets/rafael.jpg",
+      "imageSize": 300,
+      "skills": [
+        "Leadership",
+        "Team work",
+        "Communication",
+        "Flexibility",
+        "Adaptability"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Arun Pitchai",
+      "email": "arun.pitchai@aspiresys.com",
+      "password": "Arun107",
+      "age": "Unknow",
+      "job": "Project Leader",
+      "location": "Siruseri",
+      "imageUrl": "/assets/avatar.png",
+      "imageSize": 300,
+      "skills": [
+        "Problem-solving",
+        "Critical thinking",
+        "Time management",
+        "Collaboration",
+        "Mentoring"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Alfredo Garcia",
+      "email": "alfredo.garcia@aspiresys.com",
+      "password": "Alfredo108",
+      "age": 23,
+      "job": "Trainee",
+      "location": "Mexico",
+      "imageUrl": "/assets/avatar.png",
+      "imageSize": 300,
+      "skills": [
+        "Problem-solving",
+        "Collaboration",
+        "Tolerance",
+        "Adaptability"
+      ]
+    }
+  ]
