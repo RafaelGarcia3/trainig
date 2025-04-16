@@ -6,6 +6,7 @@ import MyButton from './components/Event/Event.jsx';
 import Count from './components/Count/Count.jsx';
 import Gallery from './components/Gallery/Gallery.jsx';
 import Control from './components/Control/Control.jsx';
+import VideoPlayer from './components/VideoPlayer/VideoPlayer.jsx';
 
 export default class App extends React.Component {
   render() {
@@ -17,6 +18,7 @@ export default class App extends React.Component {
         <Count />
         <Gallery /> */}
         <Control />
+        <VideoPlayer />
       </>
     );
   }

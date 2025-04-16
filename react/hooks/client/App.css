@@ -1,0 +1,29 @@
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e0f7fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+  
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+  
+.menu-link {
+    padding: 1rem;
+    background-color: #00796b;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    width: 30%;
+}
+  
+.menu-link:hover {
+    background-color: #005e53;
+}
+  

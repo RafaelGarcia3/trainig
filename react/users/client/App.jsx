@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import Login from "./components/User/Login.jsx";
+import Login from "./components/Login/Login.jsx";
 import User from "./components/User/User.jsx";
 
 export default function App(){
@@ -21,10 +21,7 @@ export default function App(){
   return (
     <>
       { user ? (
-        <>
-          <User />
-          <button onClick={handleLogout}> Logout </button>
-        </>
+        <User onLogout={handleLogout} />
       ) : (
         <Login onLogin={setUser} />
       ) }

@@ -1,0 +1,47 @@
+.app {
+    max-width: 400px;
+    margin: 50px auto;
+    padding-bottom: 1em;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0000001a;
+}
+  
+input {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+button {
+    padding: 10px;
+    margin-left: 10px;
+    border: none;
+    background: #00796b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #005e53;
+}
+  
+.card {
+    margin-top: 20px;
+}
+
+.card ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card h1{
+    margin-bottom: 0;
+}
+
+.card h1+p{
+    margin-top: 0;
+}

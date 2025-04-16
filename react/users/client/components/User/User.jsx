@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './User.css';
 import usersData from '../../assets/users.json';
-// import profileImage from '../../assets/avatar.png';
+import profileImage from '../../assets/rafael.jpg';
 
 function Skills(skills){
     const listItems = skills.map( (skill, index) =>
@@ -15,7 +15,7 @@ function Skills(skills){
     );
 }
 
-export default function User(){
+export default function User( {onLogout} ){
     const [user,setUser] = useState(null);
 
     useEffect( () => {
@@ -45,11 +45,6 @@ export default function User(){
                     <img 
                         src={user.imageUrl}
                         alt={'Photo of ' + user.name}
-                        style={{
-                            width: user.imageSize,
-                            height: user.imageSize,
-                            borderRadius: '50%'
-                        }}
                     />
                 </div>
                 <div className="user-info">
@@ -63,6 +58,7 @@ export default function User(){
                     {Skills(user.skills)}
                 </div>
             </div>
+            <button className="logout-button" onClick={onLogout}> Logout </button>
         </>
     );
 }
