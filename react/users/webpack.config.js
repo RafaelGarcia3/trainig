@@ -42,9 +42,9 @@ module.exports = {
   plugins: [HtmlWebpackPluginConfig],
   devServer: {
     static: {
-      directory: path.join(__dirname, 'client', 'assets'),
+      directory: path.join(__dirname, 'client'),
     },
+    compress: true,
     port: 8080,
-    open: true,
   }
 }

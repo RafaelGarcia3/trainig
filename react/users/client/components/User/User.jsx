@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import './User.css';
-import usersData from '../../assets/users.json';
-import profileImage from '../../assets/rafael.jpg';
 
 function Skills(skills){
     const listItems = skills.map( (skill, index) =>

@@ -30,9 +30,6 @@ if(pwd1 === pwd2){
 }else{
     pwdMatch = false;
 }
-// Add your code here
-
-// Don't edit the code below here!
 
 const section = document.querySelector('section');
 

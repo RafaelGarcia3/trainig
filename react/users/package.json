@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Rafael Garcia",
   "license": "ISC",
@@ -21,8 +21,11 @@
     "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
     "@babel/preset-react": "^7.26.3",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
     "babel-loader": "^10.0.0",
     "css-loader": "^7.1.2",
+    "jest": "^29.7.0",
     "style-loader": "^4.0.0",
     "webpack-cli": "^6.0.1"
   }

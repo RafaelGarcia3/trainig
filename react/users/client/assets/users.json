@@ -24,7 +24,7 @@
       "age": "Unknow",
       "job": "Project Leader",
       "location": "Siruseri",
-      "imageUrl": "/assets/avatar.png",
+      "imageUrl": "/assets/avatar.jpg",
       "skills": [
         "Problem-solving",
         "Critical thinking",
@@ -41,7 +41,7 @@
       "age": 23,
       "job": "Trainee",
       "location": "Mexico",
-      "imageUrl": "/assets/avatar.png",
+      "imageUrl": "/assets/avatar.jpg",
       "skills": [
         "Problem-solving",
         "Collaboration",
