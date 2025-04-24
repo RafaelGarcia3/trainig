@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
-import './User.css';
+import React from "react";
+import useLoggedUser from "../../hooks/useLoggedUser";
+import "./User.css";
 
 function Skills(skills){
     const listItems = skills.map( (skill, index) =>
@@ -14,14 +15,8 @@ function Skills(skills){
 }
 
 export default function User( {onLogout} ){
-    const [user,setUser] = useState(null);
-
-    useEffect( () => {
-        const userData = JSON.parse(localStorage.getItem("loggedUser"));
-        console.log(userData);
-        setUser(userData);
-    }, []);
-
+    const user = useLoggedUser();
+    
     if(!user){
         return(
             <div>Loading...</div>

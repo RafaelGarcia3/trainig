@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import usersData from "../../assets/users.json";
+import { loginUser } from "../../logic/authLogic";
 import "./Login.css"
 
 export default function Login( { onLogin } ){
@@ -10,13 +10,11 @@ export default function Login( { onLogin } ){
     const handleLogin = (e) => {
         e.preventDefault();
 
-        const user = usersData.find( (user) => (user.email === email) && (user.password === password) );
-        
-        if(user){
-            localStorage.setItem("loggedUser", JSON.stringify(user));
-            onLogin(user);
+        const result = loginUser(email, password);
+        if(result.success){
+            onLogin(result.data);
         }else{
-            setError("Invalid credentials. Please try again");
+            setError(result.error);
         }
     };
 
