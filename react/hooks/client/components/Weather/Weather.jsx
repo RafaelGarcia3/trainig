@@ -3,8 +3,6 @@ import { fetchWeather } from '../../services/weatherService.js';
 import './Weather.css'
 import WeatherCard from './WeatherCard.jsx';
 
-const api_key = '393c442065cf87f49e0ed1368b7c7098';
-
 export default function Weather(){
     const [city, setCity] = useState('');
     const [weather, setWeather] = useState(null);

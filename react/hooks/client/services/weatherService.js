@@ -1,20 +1,18 @@
+import axios from  'axios';
+
 const api_key = '393c442065cf87f49e0ed1368b7c7098';
 
 export async function fetchWeather(city) {
     if (!city) return null;
 
-    try {
-        const response = await fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${api_key}&units=metric`
-        );
-        const data = await response.json();
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${api_key}&units=metric`;
 
-        if (data.cod === 200) {
-            return { success: true, data };
-        } else {
-            return { success: false, error: `Error ${data.cod}: ${data.message}` };
-        }
+    try {
+        const response = await axios.get(url);
+        return{success: true, data: response.data};
     } catch (error) {
-        return { success: false, error: 'Error getting weather: ' + error.message };
+        const status = error.response?.status;
+        const message = error.response?.data?.message || error.message;
+        return { success: false, error: `Error ${status || ''}: ${message}`};
     }
 }
